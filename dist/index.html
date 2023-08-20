@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="app">
+        <div style="color:red;">
+            {{name}} hello
+        </div>
+        <span>{{age}}</span>
+    </div>
+
+
+    <script src="vue.js"></script>
+    <script>
+        const vm = new Vue({
+            data() {
+                return {
+                    name: '111',
+                    age: 12,
+                    address: {
+                        number: 1234
+                    },
+                    hobby: [1, 2, 3, { fuxx: '111' }]
+                }
+            },
+            // template: '<div>1111</div>'
+        })
+        vm.$mount('#app')
+    </script>
+</body>
+
+</html>
